@@ -65,7 +65,7 @@
 <main>
     <h1>Privacy Policy - Safa</h1>
 
-    <p><strong>Last Updated:</strong> October 24, 2026</p>
+    <p><strong>Last Updated:</strong> October 28, 2026</p>
 
     <p>This Privacy Policy explains how Safa ("we," "us," or "our") collects, uses, stores, and protects information when you use the Safa mobile application for iOS and Android (the "App"). Safa is operated by Ismail Turanli. You can contact us at <a href="mailto:ismailturanli91@gmail.com">ismailturanli91@gmail.com</a>.</p>
 
@@ -85,6 +85,7 @@
         <li><strong>App preferences:</strong> You may choose settings such as calculation preferences, notification preferences, selected city or mosque, Quran reading progress, saved tools, or similar app choices. These are stored on your device.</li>
         <li><strong>Ask Imam questions:</strong> If you use Ask Imam, the question you type is sent to our AI service provider to generate an answer. See Section 3.</li>
         <li><strong>Reported AI answers:</strong> If you use the "Report" option on an AI answer, that answer and the question it replied to are sent to us for review. See Section 3.</li>
+        <li><strong>Promotional codes:</strong> In the Android app, you can enter a promotional code we provide to receive premium access for a limited time. Our server checks the code without storing it. To limit guessing, it records the number of attempts linked to your anonymous ID and to a one-way keyed hash of your network address, and deletes these records within 2 days. If the code is valid, premium access is granted through RevenueCat, and our server records when it was granted and when it ends, and deletes that record after 30 days.</li>
     </ul>
 
     <h3>1.2 Information Collected Automatically</h3>
@@ -136,6 +137,7 @@
         <li><strong>What is sent:</strong> The question you type and your app language. In the iOS app, up to the last 12 messages of the same conversation are also sent so that the answer can follow the conversation; in the Android app, only your latest question is sent. Your name, contact details, and location are not sent.</li>
         <li><strong>How it is sent:</strong> In the Android app, questions go to our server on Google Firebase (Cloud Functions, European Union, Frankfurt region), which forwards them to OpenAI. In the iOS app, questions are sent to OpenAI through AIProxy, a service that protects our OpenAI access key.</li>
         <li><strong>What OpenAI keeps:</strong> OpenAI does not use data sent through its API to train its models by default. It may keep requests and answers in abuse-monitoring logs for up to 30 days, unless the law requires longer. For Android requests, we ask OpenAI not to store the conversation, and we send a one-way hashed identifier instead of any ID that identifies you, so that OpenAI can detect abuse.</li>
+        <li><strong>Content checks:</strong> In the Android app, our server also sends your question and the generated answer to OpenAI's moderation service, which flags harmful content. If either is flagged, you receive a short notice instead of an answer. Only the type of content that was flagged is logged, never the text.</li>
         <li><strong>What our server keeps:</strong> Our server does not store the text of your questions or of the answers. It keeps only technical usage records linked to an anonymous ID (such as how many questions were asked today, whether premium access is active, a request ID, and the size of the request), and deletes them automatically within 30 days.</li>
         <li><strong>Reported answers:</strong> If you report an answer (available in the Android app), we store that answer, the question it replied to, your app language, and the time of the report, together with a one-way hashed reporter ID. We use reports only to review answers and improve the feature, and delete them automatically after 90 days. You can report up to 10 answers a day.</li>
     </ul>
@@ -190,6 +192,7 @@
         <li><strong>Ask Imam questions and answers:</strong> Not stored on our server. OpenAI may keep them in abuse-monitoring logs for up to 30 days.</li>
         <li><strong>Ask Imam usage records:</strong> Deleted automatically within 30 days; network-level rate-limit records within 2 days.</li>
         <li><strong>Reported AI answers:</strong> Deleted automatically after 90 days.</li>
+        <li><strong>Promotional code records:</strong> Attempt records deleted automatically within 2 days; records of a granted code after 30 days.</li>
         <li><strong>Analytics:</strong> User-level and event-level Google Analytics data is kept for no longer than 14 months; aggregated reports may be kept longer.</li>
         <li><strong>Crash reports:</strong> Firebase Crashlytics keeps crash reports and their installation IDs for 90 days.</li>
         <li><strong>Subscription records:</strong> Retained as needed to validate purchases, provide premium access, resolve disputes, and comply with legal obligations.</li>
